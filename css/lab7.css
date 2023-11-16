@@ -1,0 +1,70 @@
+body {
+    background-image: url("../img/lab7/1.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.input {
+    background-color: mediumpurple;
+    margin: 50px auto;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    display: block;
+    font-family: Times, serif;
+    font-size: 16px;
+}
+.roundDiv {
+    background-image: linear-gradient(135deg, tomato, green, orange);
+    width: 250px;
+    height: 250px;
+    line-height: 200px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    font-family: Times, serif;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+.roundDiv:active {
+    animation: pulse 0.5s;
+}
+.button {
+    display: block;
+    background-color: grey;
+    color: black;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-family: Times, serif;
+    font-size: 26px;
+    margin: 20px;
+}
+.button:active {
+    animation: pulse 0.5s;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
